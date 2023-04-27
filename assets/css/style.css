@@ -1,0 +1,267 @@
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+body{
+  background: black;
+}
+.background {
+    background-image: url(../images/Gym.jpg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-position:center;
+    background-size: cover;
+    filter: blur(3px) brightness(0.7);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+/*top-left corner */
+.logo {
+
+  z-index: 1;
+}
+.contents {
+
+text-align: center;
+
+color: white;
+
+font-family: "Courier New", Courier, monospace;
+
+font-size: 20px;
+
+z-index: 1;
+
+/* padding: 20px; */
+
+margin: 40px;
+
+margin-top: 20px;
+
+padding-top: 0;
+}
+   .Daysleft p
+   {
+       color: white;
+       font-family: "Courier New", Courier, monospace;
+       font-size: 20px;
+       font-weight:bolder;
+      
+   }
+
+/* hr style */
+hr {
+  margin: auto;
+  width: 80%;
+  z-index: 1;
+  
+}
+/* button style */
+.notify-me
+{
+     /* width: 124px; */
+     /* height: 40px; */
+     border-radius: 24px;
+     background-color:#F8CA40;
+     z-index: 1;
+     font-family: "Courier New", Courier, monospace;
+     font-weight: 600;
+     color: #000;
+     /* margin-top: 37px; */
+     padding: 10px 20px;
+     display: inline-block;
+     font-size: 17px;
+     box-shadow: 0 0 10px 7px #00000070;
+}
+/* overlay style */
+.overlay
+{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-position:center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.363);
+  z-index: 0;
+  
+}
+/* span style(35) */
+.count 
+{
+  color: #F8CA40;
+  font-size: 55px;
+  z-index: 1;
+}
+.Daysleft {
+  text-align: center;
+}
+/* start footer .....................................................................*/
+
+*{
+margin: 0px;
+padding: 0px;
+}
+
+.global {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0px 0;
+  border-top: 1px solid #eeeeee3d;
+}
+
+.global h6{
+
+margin-top: 0;
+margin-bottom: 12px;
+font-weight: 700;
+font-size: 18px;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-family: "Courier New", Courier, monospace;
+color: #fff;
+font-weight: bold;
+}
+.global .social{
+
+/* width: 100%; */
+
+/* margin: 0 auto; */
+
+text-align: center;
+
+/* padding: 40px; */
+
+/* padding-bottom: 0px; */
+
+/* border-top: 1px solid #eeeeee3d; */
+
+/* margin-top: 50px; */
+}
+.global .social a{font-size: 20px;width: 20px;height: 20px;/* line-height: 39px; */display: inline-block;border-radius: 50%;border: 2px solid #F8CA40;box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4);margin: 10px;color: #fff;opacity: 0.7;transition: 0.3s ease-in-out;/* vertical-align: middle; */padding: 12px;}
+.global .social a:hover{
+opacity: 0.9;
+box-shadow: 0px 1px 3px 2px rgba(255, 255, 255, 0.9);
+}
+.global .copyright{text-align: center;padding-top: 24px;font-weight: 500;opacity: 0.8;font-size: 16px;font-family: 'Courier New', Courier, monospace;font-weight: bold;color: #fff;margin-bottom: 1rem;}
+
+
+body {
+  position: relative;
+}
+.header
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.contents h1 {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: xxx-large;
+}
+
+p.Text {
+    /* margin: -23px; */
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.contents {
+  margin: 5rem auto;
+  /* width: 60%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  /* margin-top: 3rem; */
+}
+
+/* Breakpoints */
+/* Extra small devices (phones) */
+@media only screen and (max-width: 480px) {
+  /* Styles go here */
+ .contents h1{
+ font-size: 2rem;
+ }
+  .global .social a {
+    padding: 6px;
+  }
+  .global .social a i{
+    font-size: 15px;
+  }
+  .global .copyright{
+    padding-top: 4px;
+    margin-bottom: 1rem;
+  }
+  p.Text {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small devices (tablets) */
+@media only screen and (min-width: 481px) and (max-width: 767.98px) {
+  p.Text {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium devices (desktops) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  p.Text {
+    font-size: 1.5rem;
+  }
+
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* Styles go here */
+}
+
+/* Extra large devices (large desktops) */
+@media only screen and (min-width: 1200px) {
+  /* Styles go here */
+}
+
+
+/* Breakpoints */
+/* Extra small devices (phones) */
+@media only screen and (max-width: 480px) {
+  /* Styles go here */
+}
+
+/* Small devices (tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  /* Styles go here */
+}
+
+/* Medium devices (desktops) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  /* Styles go here */
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* Styles go here */
+}
+
+/* Extra large devices (large desktops) */
+@media only screen and (min-width: 1200px) {
+  /* Styles go here */
+}
